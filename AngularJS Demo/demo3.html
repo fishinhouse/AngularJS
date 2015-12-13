@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Angular Demo3</title>
+</head>
+<body>
+	<div ng-app="" ng-init="persons=[{firstname:'wang',lastname:'liang'},{firstname:'liu',lastname:'fei'},{firstname:'wang',lastname:'yang'}]">		
+		<p>开发人员名单如下：</p>
+		<ul>
+			<li ng-repeat="ps in persons">
+				姓名：{{ps.firstname+" "+ps.lastname}}
+			</li>
+		</ul>
+		
+		
+	</div>
+
+</body>
+<script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+
+</html>
