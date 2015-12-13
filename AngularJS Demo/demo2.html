@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Angular Demo2</title>
+</head>
+<body>
+	<div ng-app="" ng-init="num1=1;num2=2;person={firstname:'wang',lastname:'liang'};nums=[1,2,3,4]">
+		<p>第一个数：{{num1}}</p>
+		<p>第二个数：{{num2}}</p>
+		<p>两个数之和：<label ng-bind="num1"></label>+<label ng-bind="num2"></label>={{num1+num2}}</p>
+		<p>姓名：{{person.firstname+person.lastname}}</p>
+		<p>1至4数字，第三个数是：{{nums[2]}}</p>
+	</div>
+
+</body>
+<script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+
+</html>
